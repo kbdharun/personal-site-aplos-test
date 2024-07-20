@@ -8,6 +8,7 @@ export default defineConfig({
   title: "Aplós Template",
   description:
     "This is a cool template for VitePress, it has a lot of features, and it's easy to use",
+  base: "/personal-site-aplos-test/",
 
   lastUpdated: true,
   cleanUrls: true,
