@@ -18,9 +18,9 @@ export default defineConfig({
     author: "Dharun Krishna K B",
     nav: {
       links: [
-        { text: "Find Me", link: "/findme" },
+        { text: "Find Me", link: "findme" },
         { text: "Blog", link: "https://blog.kbdharun.dev"},
-        { text: "Projects", link: "/projects" }
+        { text: "Projects", link: "projects" }
       ],
       git: "https://github.com/kbdharun/kbdharun.github.io", // Link to the source code
       rss: "https://blog.kbdharun.dev/rss.xml" // Link to the blog's RSS feed
@@ -55,7 +55,7 @@ export default defineConfig({
   },
   head: [
     ["meta", { name: "author", content: "Dharun Krishna K B" }],
-    ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["link", { rel: "icon", href: "favicon.ico" }],
     ["link", { rel: "me", href: "https://mastodon.social/@kbdharunkrishna" }],
     ["link", { rel: "me", href: "https://fosstodon.org/@kbdharun" }],
     ["meta", { name: "theme-color", content: accent }], // Custom theme color (defined above)
