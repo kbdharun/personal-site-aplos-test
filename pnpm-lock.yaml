@@ -28,8 +28,8 @@ importers:
         specifier: ^1.80.5
         version: 1.80.5
       vitepress:
-        specifier: ^1.4.3
-        version: 1.4.3(@algolia/client-search@4.24.0)(@types/node@22.8.6)(postcss@8.4.47)(sass@1.80.5)(search-insights@2.15.0)
+        specifier: ^1.5.0
+        version: 1.5.0(@algolia/client-search@4.24.0)(@types/node@22.8.6)(postcss@8.4.47)(sass@1.80.5)(search-insights@2.15.0)
 
 packages:
 
@@ -312,6 +312,12 @@ packages:
   '@humanwhocodes/retry@0.3.0':
     resolution: {integrity: sha512-d2CGZR2o7fS6sWB7DG/3a95bGKQyHMACZ5aW8qGkkqQpUoZV6C0X7Pc7l4ZNMZkfNBf4VWNe9E1jRsf0G146Ew==}
     engines: {node: '>=18.18'}
+
+  '@iconify-json/simple-icons@1.2.10':
+    resolution: {integrity: sha512-9OK1dsSjXlH36lhu5n+BlSoXuqFjHUErGLtNdzHpq0vHq4YFBuGYWtZ+vZTHLreRQ8ijPRv/6EsgkV+nf6AReQ==}
+
+  '@iconify/types@2.0.0':
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
@@ -1272,8 +1278,8 @@ packages:
       terser:
         optional: true
 
-  vitepress@1.4.3:
-    resolution: {integrity: sha512-956c2K2Mr0ubY9bTc2lCJD3g0mgo0mARB1iJC/BqUt4s0AM8Wl60wSU4zbFnzV7X2miFK1XJDKzGZnuEN90umw==}
+  vitepress@1.5.0:
+    resolution: {integrity: sha512-q4Q/G2zjvynvizdB3/bupdYkCJe2umSAMv9Ju4d92E6/NXJ59z70xB0q5p/4lpRyAwflDsbwy1mLV9Q5+nlB+g==}
     hasBin: true
     peerDependencies:
       markdown-it-mathjax3: ^4
@@ -1584,6 +1590,12 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/retry@0.3.0': {}
+
+  '@iconify-json/simple-icons@1.2.10':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify/types@2.0.0': {}
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
@@ -2534,10 +2546,11 @@ snapshots:
       fsevents: 2.3.3
       sass: 1.80.5
 
-  vitepress@1.4.3(@algolia/client-search@4.24.0)(@types/node@22.8.6)(postcss@8.4.47)(sass@1.80.5)(search-insights@2.15.0):
+  vitepress@1.5.0(@algolia/client-search@4.24.0)(@types/node@22.8.6)(postcss@8.4.47)(sass@1.80.5)(search-insights@2.15.0):
     dependencies:
       '@docsearch/css': 3.6.2
       '@docsearch/js': 3.6.2(@algolia/client-search@4.24.0)(search-insights@2.15.0)
+      '@iconify-json/simple-icons': 1.2.10
       '@shikijs/core': 1.22.2
       '@shikijs/transformers': 1.22.2
       '@shikijs/types': 1.22.2
